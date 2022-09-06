@@ -1,7 +1,8 @@
 name: ai_clock
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: ai_clock,Clock,clock,clock_painter,painter clock,paint click,CustomPainter,CustomPaint,Clock widget's Flutter package project.
+version: 1.0.0
+homepage: https://flutter-app-sample.github.io/
+repository: https://github.com/pdliuw/ai_clock
 
 environment:
   sdk: '>=2.17.1 <3.0.0'

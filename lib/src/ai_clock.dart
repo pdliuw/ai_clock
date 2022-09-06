@@ -31,14 +31,21 @@ class _AiClockState extends State<AiClock> {
 
   @override
   Widget build(BuildContext context) {
-    int second = DateTime.now().second;
+    var nowTime = DateTime.now();
+    int hour = nowTime.hour;
+    int minute = nowTime.minute;
+    int second = nowTime.second;
     return CustomPaint(
       painter: ClockPainter(
         interval: 5,
         lineCount: 60,
         color: Colors.green,
-        maxCount: 60,
-        currentCount: second,
+        secondMaxCount: 60,
+        secondCurrentCount: second,
+        hourMaxCount: 12,
+        hourCurrentCount: hour,
+        minuteMaxCount: 60,
+        minuteCurrentCount: minute,
       ),
     );
     // return ArcProgressBar();
